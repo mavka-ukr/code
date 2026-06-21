@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>/tmp/tmp.6olcLkVf1s/мавка-0.125.3/машина/предмети/Послідовність/ПредметПослідовності.ц</title>
+  <title>/tmp/tmp.11KXBQvIeC/мавка-0.125.3/машина/предмети/Послідовність/ПредметПослідовності.ц</title>
   <style>
     html, body, pre {
       margin: 0;
@@ -137,7 +137,7 @@
 <span class="line"><span style="color:#FF7B72">    змінна</span><span style="color:#E6EDF3"> дані: *Значення;</span></span>
 <span class="line"><span style="color:#FF7B72">    змінна</span><span style="color:#E6EDF3"> п: </span><span style="color:#79C0FF">природне</span><span style="color:#E6EDF3">;</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FF7B72">    якщо</span><span style="color:#E6EDF3"> предмет_значення.клас == М.клас_Текст {</span></span>
+<span class="line"><span style="color:#FF7B72">    якщо</span><span style="color:#E6EDF3"> предмет_значення.</span><span style="color:#FF7B72">клас</span><span style="color:#E6EDF3"> == М.клас_Текст {</span></span>
 <span class="line"><span style="color:#FF7B72">      змінна</span><span style="color:#E6EDF3"> предмет_тексту = предмет_значення </span><span style="color:#FF7B72">як</span><span style="color:#E6EDF3"> *ПредметТексту;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#E6EDF3">      розмір = предмет_тексту.значення.розмір;</span></span>
@@ -149,9 +149,9 @@
 <span class="line"></span>
 <span class="line"><span style="color:#E6EDF3">        п += </span><span style="color:#79C0FF">1</span><span style="color:#E6EDF3">;</span></span>
 <span class="line"><span style="color:#E6EDF3">      }</span></span>
-<span class="line"><span style="color:#E6EDF3">    } </span><span style="color:#FF7B72">інакше</span><span style="color:#FF7B72"> якщо</span><span style="color:#E6EDF3"> предмет_значення.клас == М.клас_Послідовність {</span></span>
+<span class="line"><span style="color:#E6EDF3">    } </span><span style="color:#FF7B72">інакше</span><span style="color:#FF7B72"> якщо</span><span style="color:#E6EDF3"> предмет_значення.</span><span style="color:#FF7B72">клас</span><span style="color:#E6EDF3"> == М.клас_Послідовність {</span></span>
 <span class="line"><span style="color:#FF7B72">      вернути</span><span style="color:#E6EDF3"> задіяне_значення;</span></span>
-<span class="line"><span style="color:#E6EDF3">    } </span><span style="color:#FF7B72">інакше</span><span style="color:#FF7B72"> якщо</span><span style="color:#E6EDF3"> предмет_значення.клас == М.клас_Список {</span></span>
+<span class="line"><span style="color:#E6EDF3">    } </span><span style="color:#FF7B72">інакше</span><span style="color:#FF7B72"> якщо</span><span style="color:#E6EDF3"> предмет_значення.</span><span style="color:#FF7B72">клас</span><span style="color:#E6EDF3"> == М.клас_Список {</span></span>
 <span class="line"><span style="color:#FF7B72">      змінна</span><span style="color:#E6EDF3"> предмет_списку = предмет_значення </span><span style="color:#FF7B72">як</span><span style="color:#E6EDF3"> *ПредметСписку;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#E6EDF3">      розмір = предмет_списку.розмір;</span></span>
@@ -163,7 +163,7 @@
 <span class="line"></span>
 <span class="line"><span style="color:#E6EDF3">        п += </span><span style="color:#79C0FF">1</span><span style="color:#E6EDF3">;</span></span>
 <span class="line"><span style="color:#E6EDF3">      }</span></span>
-<span class="line"><span style="color:#E6EDF3">    } </span><span style="color:#FF7B72">інакше</span><span style="color:#FF7B72"> якщо</span><span style="color:#E6EDF3"> предмет_значення.клас == М.клас_Дані {</span></span>
+<span class="line"><span style="color:#E6EDF3">    } </span><span style="color:#FF7B72">інакше</span><span style="color:#FF7B72"> якщо</span><span style="color:#E6EDF3"> предмет_значення.</span><span style="color:#FF7B72">клас</span><span style="color:#E6EDF3"> == М.клас_Дані {</span></span>
 <span class="line"><span style="color:#FF7B72">      змінна</span><span style="color:#E6EDF3"> предмет_даних = предмет_значення </span><span style="color:#FF7B72">як</span><span style="color:#E6EDF3"> *ПредметДаних;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#E6EDF3">      розмір = предмет_даних.розмір;</span></span>
