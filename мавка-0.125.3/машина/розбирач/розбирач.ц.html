@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>/tmp/tmp.11KXBQvIeC/мавка-0.125.3/машина/розбирач/розбирач.ц</title>
+  <title>/tmp/tmp.6olcLkVf1s/мавка-0.125.3/машина/розбирач/розбирач.ц</title>
   <style>
     html, body, pre {
       margin: 0;
@@ -685,7 +685,7 @@
 <span class="line"><span style="color:#FF7B72">      вернути</span><span style="color:#FF7B72"> так</span><span style="color:#E6EDF3">;</span></span>
 <span class="line"><span style="color:#E6EDF3">    }</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#E6EDF3">    структура Накопичувач&#x3C;Т> {</span></span>
+<span class="line"><span style="color:#FF7B72">    структура</span><span style="color:#E6EDF3"> Накопичувач&#x3C;Т> {</span></span>
 <span class="line"><span style="color:#E6EDF3">      розмір: </span><span style="color:#79C0FF">природне</span><span style="color:#E6EDF3">;</span></span>
 <span class="line"><span style="color:#E6EDF3">      дані: *Т;</span></span>
 <span class="line"><span style="color:#E6EDF3">      вмісткість: </span><span style="color:#79C0FF">природне</span><span style="color:#E6EDF3">;</span></span>
@@ -1957,7 +1957,7 @@
 <span class="line"><span style="color:#E6EDF3">        копія.дані = ДаніСполукиДія {</span></span>
 <span class="line"><span style="color:#E6EDF3">          тривала = дані.тривала,</span></span>
 <span class="line"><span style="color:#E6EDF3">          власна = дані.власна,</span></span>
-<span class="line"><span style="color:#FF7B72">          клас</span><span style="color:#E6EDF3"> = зробити_повну_копію_сполуки(М, дані.</span><span style="color:#FF7B72">клас</span><span style="color:#E6EDF3">),</span></span>
+<span class="line"><span style="color:#E6EDF3">          клас = зробити_повну_копію_сполуки(М, дані.клас),</span></span>
 <span class="line"><span style="color:#E6EDF3">          ідентифікатор = дані.ідентифікатор,</span></span>
 <span class="line"><span style="color:#E6EDF3">          кількість_параметрів = дані.кількість_параметрів,</span></span>
 <span class="line"><span style="color:#E6EDF3">          параметри = зробити_повну_копію_параметрів(М, дані.кількість_параметрів, дані.параметри),</span></span>
@@ -2292,7 +2292,7 @@
 <span class="line"><span style="color:#E6EDF3">          звільнити_аргументи(М, дані.кількість_аргументів, дані.аргументи);</span></span>
 <span class="line"><span style="color:#E6EDF3">        } </span><span style="color:#FF7B72">інакше</span><span style="color:#FF7B72"> якщо</span><span style="color:#E6EDF3"> сполука.вид == ВидСполукиДія {</span></span>
 <span class="line"><span style="color:#FF7B72">          змінна</span><span style="color:#E6EDF3"> дані = сполука.дані </span><span style="color:#FF7B72">як</span><span style="color:#E6EDF3"> ДаніСполукиДія;</span></span>
-<span class="line"><span style="color:#E6EDF3">          звільнити_сполуку(М, дані.</span><span style="color:#FF7B72">клас</span><span style="color:#E6EDF3">);</span></span>
+<span class="line"><span style="color:#E6EDF3">          звільнити_сполуку(М, дані.клас);</span></span>
 <span class="line"><span style="color:#E6EDF3">          звільнити_параметри(М, дані.кількість_параметрів, дані.параметри);</span></span>
 <span class="line"><span style="color:#FF7B72">          якщо</span><span style="color:#E6EDF3"> дані.тип_результату.заповнено {</span></span>
 <span class="line"><span style="color:#E6EDF3">            звільнити_тип(М, дані.тип_результату.значення);</span></span>
@@ -3414,7 +3414,7 @@
 <span class="line"><span style="color:#FF7B72">      вернути</span><span style="color:#FF7B72"> ні</span><span style="color:#E6EDF3">;</span></span>
 <span class="line"><span style="color:#E6EDF3">    }</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#E6EDF3">    структура ІнформаціяОперації {</span></span>
+<span class="line"><span style="color:#FF7B72">    структура</span><span style="color:#E6EDF3"> ІнформаціяОперації {</span></span>
 <span class="line"><span style="color:#E6EDF3">      вид_операції: </span><span style="color:#79C0FF">природне</span><span style="color:#E6EDF3">;</span></span>
 <span class="line"><span style="color:#E6EDF3">      кількість_слів: </span><span style="color:#79C0FF">природне</span><span style="color:#E6EDF3">;</span></span>
 <span class="line"><span style="color:#E6EDF3">      пріоритет: </span><span style="color:#79C0FF">природне</span><span style="color:#E6EDF3">;</span></span>
@@ -4633,7 +4633,7 @@
 <span class="line"><span style="color:#FF7B72">      змінна</span><span style="color:#E6EDF3"> дані_сполуки_дія = ДаніСполукиДія {</span></span>
 <span class="line"><span style="color:#E6EDF3">        тривала = </span><span style="color:#FF7B72">ні</span><span style="color:#E6EDF3">,</span></span>
 <span class="line"><span style="color:#E6EDF3">        власна = </span><span style="color:#FF7B72">ні</span><span style="color:#E6EDF3">,</span></span>
-<span class="line"><span style="color:#FF7B72">        клас</span><span style="color:#E6EDF3"> = </span><span style="color:#FF7B72">пусто</span><span style="color:#E6EDF3">,</span></span>
+<span class="line"><span style="color:#E6EDF3">        клас = </span><span style="color:#FF7B72">пусто</span><span style="color:#E6EDF3">,</span></span>
 <span class="line"><span style="color:#E6EDF3">        ідентифікатор = можливо&#x3C;Ідентифікатор> { </span><span style="color:#FF7B72">ні</span><span style="color:#E6EDF3">, ... },</span></span>
 <span class="line"><span style="color:#E6EDF3">        кількість_параметрів = </span><span style="color:#79C0FF">0</span><span style="color:#E6EDF3">,</span></span>
 <span class="line"><span style="color:#E6EDF3">        параметри = </span><span style="color:#FF7B72">пусто</span><span style="color:#E6EDF3">,</span></span>
@@ -4670,7 +4670,7 @@
 <span class="line"><span style="color:#E6EDF3">              ідентифікатор = дані_сполуки_дія.ідентифікатор.значення</span></span>
 <span class="line"><span style="color:#E6EDF3">            };</span></span>
 <span class="line"><span style="color:#E6EDF3">            сполука_звернення.місцезнаходження = Місцезнаходження { п };</span></span>
-<span class="line"><span style="color:#E6EDF3">            дані_сполуки_дія.</span><span style="color:#FF7B72">клас</span><span style="color:#E6EDF3"> = сполука_звернення;</span></span>
+<span class="line"><span style="color:#E6EDF3">            дані_сполуки_дія.клас = сполука_звернення;</span></span>
 <span class="line"><span style="color:#E6EDF3">            дані_сполуки_дія.ідентифікатор = можливо&#x3C;Ідентифікатор> { </span><span style="color:#FF7B72">так</span><span style="color:#E6EDF3">, Ідентифікатор { п } };</span></span>
 <span class="line"><span style="color:#E6EDF3">            п += </span><span style="color:#79C0FF">1</span><span style="color:#E6EDF3">;</span></span>
 <span class="line"><span style="color:#E6EDF3">          } </span><span style="color:#FF7B72">інакше</span><span style="color:#E6EDF3"> {</span></span>

@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>/tmp/tmp.11KXBQvIeC/мавка-0.125.3/машина/перекладач/перекладач.ц</title>
+  <title>/tmp/tmp.6olcLkVf1s/мавка-0.125.3/машина/перекладач/перекладач.ц</title>
   <style>
     html, body, pre {
       margin: 0;
@@ -1073,7 +1073,7 @@
 <span class="line"><span style="color:#FF7B72">        змінна</span><span style="color:#E6EDF3"> сполука_дії = дані.методи.дані[п];</span></span>
 <span class="line"><span style="color:#FF7B72">        змінна</span><span style="color:#E6EDF3"> дані_дії = сполука_дії.дані </span><span style="color:#FF7B72">як</span><span style="color:#E6EDF3"> розбирач::ДаніСполукиДія;</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FF7B72">        якщо</span><span style="color:#E6EDF3"> дані_дії.</span><span style="color:#FF7B72">клас</span><span style="color:#E6EDF3"> != </span><span style="color:#FF7B72">пусто</span><span style="color:#E6EDF3"> {</span></span>
+<span class="line"><span style="color:#FF7B72">        якщо</span><span style="color:#E6EDF3"> дані_дії.клас != </span><span style="color:#FF7B72">пусто</span><span style="color:#E6EDF3"> {</span></span>
 <span class="line"><span style="color:#E6EDF3">          вихід_помилки::</span><span style="color:#79C0FF">вміст</span><span style="color:#E6EDF3"> = зробити_помилку_перекладу(</span></span>
 <span class="line"><span style="color:#E6EDF3">            М,</span></span>
 <span class="line"><span style="color:#E6EDF3">            текст,</span></span>
@@ -2733,12 +2733,12 @@
 <span class="line"><span style="color:#FF7B72">          змінна</span><span style="color:#E6EDF3"> дані = сполука.дані </span><span style="color:#FF7B72">як</span><span style="color:#E6EDF3"> розбирач::ДаніСполукиДія;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#FF7B72">          якщо</span><span style="color:#E6EDF3"> дані.ідентифікатор.заповнено {</span></span>
-<span class="line"><span style="color:#FF7B72">            якщо</span><span style="color:#E6EDF3"> дані.</span><span style="color:#FF7B72">клас</span><span style="color:#E6EDF3"> != </span><span style="color:#FF7B72">пусто</span><span style="color:#E6EDF3"> {</span></span>
+<span class="line"><span style="color:#FF7B72">            якщо</span><span style="color:#E6EDF3"> дані.клас != </span><span style="color:#FF7B72">пусто</span><span style="color:#E6EDF3"> {</span></span>
 <span class="line"><span style="color:#E6EDF3">              успіх = перекласти_сполуку(</span></span>
 <span class="line"><span style="color:#E6EDF3">                М,</span></span>
 <span class="line"><span style="color:#E6EDF3">                сирий_текст,</span></span>
 <span class="line"><span style="color:#E6EDF3">                знаки,</span></span>
-<span class="line"><span style="color:#E6EDF3">                дані.</span><span style="color:#FF7B72">клас</span><span style="color:#E6EDF3">,</span></span>
+<span class="line"><span style="color:#E6EDF3">                дані.клас,</span></span>
 <span class="line"><span style="color:#E6EDF3">                код,</span></span>
 <span class="line"><span style="color:#E6EDF3">                дії,</span></span>
 <span class="line"><span style="color:#E6EDF3">                вихід_помилки</span></span>
@@ -2772,7 +2772,7 @@
 <span class="line"><span style="color:#E6EDF3">          }</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#FF7B72">          якщо</span><span style="color:#E6EDF3"> дані.ідентифікатор.заповнено {</span></span>
-<span class="line"><span style="color:#FF7B72">            якщо</span><span style="color:#E6EDF3"> дані.</span><span style="color:#FF7B72">клас</span><span style="color:#E6EDF3"> == </span><span style="color:#FF7B72">пусто</span><span style="color:#E6EDF3"> {</span></span>
+<span class="line"><span style="color:#FF7B72">            якщо</span><span style="color:#E6EDF3"> дані.клас == </span><span style="color:#FF7B72">пусто</span><span style="color:#E6EDF3"> {</span></span>
 <span class="line"><span style="color:#E6EDF3">              покласти_вказівку_Визначити(М, код, дії, рядок);</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#8B949E">              // потім: обробити це</span></span>
@@ -3184,17 +3184,17 @@
 <span class="line"><span style="color:#E6EDF3">  }</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#FF7B72">  простір</span><span style="color:#E6EDF3"> перекладач_в_код {</span></span>
-<span class="line"><span style="color:#E6EDF3">    структура Константи {</span></span>
+<span class="line"><span style="color:#FF7B72">    структура</span><span style="color:#E6EDF3"> Константи {</span></span>
 <span class="line"><span style="color:#E6EDF3">      розмір: </span><span style="color:#79C0FF">п32</span><span style="color:#E6EDF3">;</span></span>
 <span class="line"><span style="color:#E6EDF3">      дані: *Значення;</span></span>
 <span class="line"><span style="color:#E6EDF3">    }</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#E6EDF3">    структура Вказівки {</span></span>
+<span class="line"><span style="color:#FF7B72">    структура</span><span style="color:#E6EDF3"> Вказівки {</span></span>
 <span class="line"><span style="color:#E6EDF3">      розмір: </span><span style="color:#79C0FF">п32</span><span style="color:#E6EDF3">;</span></span>
 <span class="line"><span style="color:#E6EDF3">      дані: *</span><span style="color:#79C0FF">п8</span><span style="color:#E6EDF3">;</span></span>
 <span class="line"><span style="color:#E6EDF3">    }</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#E6EDF3">    структура Код {</span></span>
+<span class="line"><span style="color:#FF7B72">    структура</span><span style="color:#E6EDF3"> Код {</span></span>
 <span class="line"><span style="color:#E6EDF3">      константи: Константи;</span></span>
 <span class="line"><span style="color:#E6EDF3">      вказівки: Вказівки;</span></span>
 <span class="line"><span style="color:#E6EDF3">      шлях: *ПредметДаних;</span></span>
@@ -3251,7 +3251,7 @@
 <span class="line"><span style="color:#FF7B72">        якщо</span><span style="color:#E6EDF3"> константа.вид == ЗПредмет {</span></span>
 <span class="line"><span style="color:#FF7B72">          змінна</span><span style="color:#E6EDF3"> предмет_тексту = константа.дані </span><span style="color:#FF7B72">як</span><span style="color:#E6EDF3"> *Предмет </span><span style="color:#FF7B72">як</span><span style="color:#E6EDF3"> *ПредметТексту;</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#FF7B72">          якщо</span><span style="color:#E6EDF3"> предмет_тексту.</span><span style="color:#FF7B72">клас</span><span style="color:#E6EDF3"> == М.клас_Текст {</span></span>
+<span class="line"><span style="color:#FF7B72">          якщо</span><span style="color:#E6EDF3"> предмет_тексту.клас == М.клас_Текст {</span></span>
 <span class="line"><span style="color:#FF7B72">            якщо</span><span style="color:#E6EDF3"> перевірити_чи_кд_рівні(предмет_тексту.значення, значення) {</span></span>
 <span class="line"><span style="color:#FF7B72">              вернути</span><span style="color:#E6EDF3"> п;</span></span>
 <span class="line"><span style="color:#E6EDF3">            }</span></span>
